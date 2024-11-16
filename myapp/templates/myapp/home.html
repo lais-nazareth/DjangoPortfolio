@@ -1,0 +1,51 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lais Nazareth</title>
+    <link href="{% static '/css/main.css' %}" rel = "stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    {% load static %}
+</head>
+<body>
+    <br>
+    <div class="container">
+        <div class = "row">
+            <div class="col-md-3">
+                <div class = "card card-body" id="profile-wrapper">
+                <img id='profile-pic' src="{% static 'images\dr-house_-1.jpg' %}">
+                <hr>
+                <h4>Hi I'm Lais!</h4>
+                <p>I like coding!</p>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class = "card card-body">
+                    <h4>My experiences with coding</h4>
+                    <hr>
+                    <p>I've always enjoyed messing with computers and was interested in learning about how they work, that's the reason I'm gettign a degree in Computer Science earlier this year (2024).
+                        I mainly studied python and am now learning C, but a project with IEEE really spiked my interest in learning about backend development, and I'm so greatful for this project and the
+                        amazing people I met working on it!
+                    </p>
+
+                    <p>
+                        I've always been a very focused and curious person, which is why I'm studying many different technologies in order to get a broader view of all the scope Computer Science has to offer</p>
+                    
+                    <ul class="social-links">
+                        <li><img class="social" src="{% static 'images/facebook.png'%}"></li>
+                        <li><img class="social" src="{% static 'images/linkedin.png'%}"></li>
+                        <li><img class="social" src="{% static 'images/twitter.png'%}"></li>
+                        <li><img class="social" src="{% static 'images/youtube.png'%}"></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+</body>
+</html>
